@@ -2102,3 +2102,19 @@ Cannot render console from 8.47.97.101! Allowed networks: 127.0.0.1, ::1, 127.0.
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by ProductsController#new as HTML
   Rendered products/new.html.erb within layouts/application (1265.3ms)
+Completed 200 OK in 1861ms (Views: 1822.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for 8.47.97.101 at 2018-10-04 21:56:42 +0000
+Cannot render console from 8.47.97.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started POST "/products" for 8.47.97.101 at 2018-10-04 21:56:48 +0000
+Cannot render console from 8.47.97.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5dkuGDX5PLsEkzbw3D6LewJmIR7TiiZZPWsqjMf0tDUd5lxU8IJ6WD9vbvBXca1/GxnNXITzTtKhJMLGlo+FBA==", "product"=>{"name"=>"SOme stuff", "price"=>"16", "description"=>"nfsdgadfasd", "inventory"=>"3"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "products" ("name", "description", "inventory", "price", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "SOme stuff"], ["description", "nfsdgadfasd"], ["inventory", 3], ["price", 16], ["created_at", "2018-10-04 21:56:48.289356"], ["updated_at", "2018-10-04 21:56:48.289356"]]
+  [1m[35m (7.3ms)[0m  commit transaction
+Redirected to http://192.241.157.192:36580/products
+Completed 200 OK in 15ms (ActiveRecord: 8.7ms)
